@@ -135,9 +135,9 @@ npm start
 <h2 id="references">References</h2>
 <p>Content creation was supported by:</p>
 <ul>
-    <li>Grammarly. 2023. <em>Grammarly</em>. Version 2.24.0. [App]. Available from <a href="Windows Grammarly.lnk">Windows Grammarly</a> [Accessed 07 August 2024].</li>
+    <li>Grammarly. 2023. <em>Grammarly</em>. Version 2.24.0. [App]. Available from <a href="Windows Grammarly.lnk">Windows Grammarly</a> [Accessed 20 October 2024].</li>
     <li>Images were sourced from <a href="https://new.express.adobe.com/">Adobe Express</a>.</li>
-    <li>Figma. 2024. <em>Figma</em>. Version 124.2.9 [App]. Available from <a href="https://www.softonic.com/download/figma/windows">Windows Figma - Download</a> [Accessed 08 August 2024].</li>
+    <li>Figma. 2024. <em>Figma</em>. Version 124.2.9 [App]. Available from <a href="https://www.softonic.com/download/figma/windows">Windows Figma - Download</a> [Accessed 20 October 2024].</li>
 </ul>
 
 <footer>
