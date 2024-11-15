@@ -6,10 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Details</title>
     <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
     <main>
+
+        <header>
+            <div class="menuTop">
+                <div class="logo">
+                    <img src="image/Logo.png" alt="">
+                </div>
+                <ul class="menu">
+                    <li><a id="navLinks" href="index.html">Home</a></li>
+                    <li><a id="navLinks" href="monthCourses.html">Month Courses</a></li>
+                    <li><a id="navLinks" href="weekCourses.html">Weekl Courses</a></li>
+                    <li><a id="navLinks" class="active" href="about.html">About</a></li>
+                    <li>
+                        <div id="navLinks" class="iconCart">
+                            <i class="fa-solid fa-bag-shopping fa-bounce fa-2xl"></i>
+                            <div class="totalQuantity">
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a id="navLinks" href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="toggleMenu" onclick="document.querySelector('.menu').classList.toggle('active')">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <h1>Leaf And Learn</h1>
+            <h2>Aspire Today to Elevate Tomorrow to Empower The Nation.</h2>
+            <div id="leaf">
+                <i class="fa-solid fa-leaf fa-beat"></i>
+            </div>
+        </header>
+
+
         <header>
 
             <img id="course-image" alt="">
@@ -92,6 +128,97 @@
     </footer>
 
     <script src="app.js"></script>
+
+
+    <footer>
+        <div class="content">
+            <div class="item">
+                <h3>Course Offerings</h3>
+                <h4>6-month Courses:</h4>
+                <ul>
+                    <li>First Aid</li>
+                    <li>Sewing</li>
+                    <li>Landscaping</li>
+                    <li>Life Skills</li>
+                </ul>
+                <h4>6-week Short Courses:</h4>
+                <ul>
+                    <li>Child Minding</li>
+                    <li>Cooking</li>
+                    <li>Garden Maintenance</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>Contact Information</h3>
+                <p>Phone Number:</p>
+                <p> +27 11 123 4567 </p>
+                <p>Email:</p>
+                <p><a id="links" href="mailto:info@leafandlearn.co.za">info@leafandlearn.co.za</a></p>
+            </div>
+            <div class="item">
+                <h3>Physical Addresses of Venues</h3>
+                <div>
+                    <h4>Johannesburg Central Library</h4>
+                    <p>1 Rissik St, Johannesburg, 2001</p>
+                    <a id="links" href="#">Map to Johannesburg Central Library</a>
+                </div>
+                <div>
+                    <h4>Braamfontein Community Center</h4>
+                    <p>4th Ave, Braamfontein, Johannesburg, 2017</p>
+                    <a id="links" href="#">Map to Braamfontein Community Center</a>
+                </div>
+                <div>
+                    <h4>Soweto Theatre</h4>
+                    <p>1404 Dlamini Rd, Soweto, 1868</p>
+                    <a id="links" href="#">Map to Soweto Theatre</a>
+                </div>
+            </div>
+            <div class="item">
+                <h3>Contact Us</h3>
+                <textarea rows="5" placeholder="Your message..."></textarea>
+                <input type="email" placeholder="Your email" />
+                <button>Send</button>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+
+    <script>
+        // Checks if the cart should be opened
+        if (localStorage.getItem('openCart') === 'true') {
+            const cart = document.querySelector('.cart');
+            const container = document.querySelector('.container');
+            cart.style.right = '0'; // Opens the cart
+            container.style.transform = 'translateX(-400px)'; // Adjust the container
+            // Removes the flag after using it
+            localStorage.removeItem('openCart');
+        }
+    </script>
+
+    <script>
+        fetch('footer.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+
+
+                // Set the copyright information
+                const theDate = new Date();
+                const copyrightText = `© ${theDate.getFullYear()} - Musica Est Infinitus Industries | Last modified: ${document.lastModified}`;
+                document.getElementById('copyright-text').innerHTML = copyrightText;
+            })
+
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+    <script src="cart.js"></script>
 </body>
 
 </html>

@@ -442,7 +442,25 @@ footer button:hover {
   .fare .item {
     padding: 15px;
   }
+
+  header .totalQuantity {
+    position: absolute;
+    margin-top: 320px;
+    left: 400px;
+    font-size: x-large;
+    background-color: #084103;
+    width: 40px;
+    height: 40px;
+    color: #084103;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateX(20px);
+  }
 }
+
 @media screen and (max-width: 767px) {
   .transport {
     width: 100%;
@@ -512,4 +530,61 @@ footer button:hover {
     text-align: right;
     text-shadow: 0 0 10px #000;
   }
+
+  header .totalQuantity {
+    position: absolute;
+    margin-top: 320px;
+    left: 400px;
+    font-size: x-large;
+    background-color: #084103;
+    width: 40px;
+    height: 40px;
+    color: #084103;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateX(20px);
+  }
+}
+
+#navLinks {
+  color: #77ff00b9;
+  font-size: 25px;
+  font-family: "Lobster";
+  text-decoration: none;
+}
+
+#navLinks:hover {
+  color: #00ffd0;
+  transition: 0.3s;
+}
+
+#links {
+  color: #00ffff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#links:hover {
+  color: #84ff00;
+  transition: 0.3s;
+}
+
+header .totalQuantity {
+  position: absolute;
+  top: 5px;
+  right: 20;
+  font-size: x-large;
+  background-color: #497e45;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: translateX(20px);
 }

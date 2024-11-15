@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Odibee+Sans&display=swap");
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f5; /* Light background for a softer look */
+  margin: 0;
+  font-size: 16px; /* Slightly larger font size for better readability */
+  color: #2e373a;
+  font-family: "Libre Baskerville", sans-serif;
+  line-height: 1.6; /* Improved line height for readability */
+  text-align: center; /* Center-aligning text for the body */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+main {
+  width: min(1400px, 90%); /* Responsive width */
+  margin: 40px auto; /* Centered with margin */
+  padding: 20px; /* Padding for content */
+  background-color: #ffffff; /* White background for content area */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header {
+  display: flex;
+  flex-direction: column; /* Stacking the logo and title */
+  align-items: center; /* Centering header content */
+  margin-bottom: 20px; /* Space below header */
+}
+
+header img {
+  height: 60px; /* Adjusted logo height */
+  margin-bottom: 10px; /* Space below logo */
+}
+
+h1 {
+  font-size: 2.5em; /* Larger title font size */
+  text-align: center; /* Ensured title is center-aligned */
+}
+
+h2,
+h3 {
+  margin: 20px 0; /* Space above and below headings */
+}
+
+p {
+  margin: 10px 0; /* Space above and below paragraphs */
+}
+
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Removing underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* One column for mobile */
+  margin-top: 20px; /* Space above grid */
+}
+
+.venue {
+  margin-bottom: 40px; /* Space between each venue section */
+  padding: 20px; /* Padding for venue sections */
+  border: 1px solid #e0e0e0; /* Light border for separation */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fafafa; /* Light background for venue sections */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+iframe {
+  border-radius: 8px; /* Rounded corners for iframes */
+  width: 100%; /* Full width for iframes */
+  height: 450px; /* Consistent height */
+}
+
+footer {
+  margin-top: 40px; /* Space above footer */
+  padding: 20px 0; /* Padding for footer */
+  background-color: #ffffff; /* White background for footer */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow above footer */
+}
+
+@media screen and (max-width: 768px) {
+  header img {
+    height: 50px; /* Smaller logo for mobile */
+  }
+
+  h1 {
+    font-size: 2em; /* Adjusted title size for mobile */
+  }
+
+  h2,
+  h3 {
+    font-size: 1.5em; /* Adjusted heading sizes for mobile */
+  }
+
+  p {
+    font-size: 0.9em; /* Smaller font for paragraphs */
+  }
+
+  main {
+    padding: 10px; /* Less padding on mobile */
+  }
+}

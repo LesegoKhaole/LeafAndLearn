@@ -6,15 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="cart_checkout.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
+
+    <header>
+        <div class="menuTop">
+            <div class="logo">
+                <img src="image/Logo.png" alt="">
+            </div>
+            <ul class="menu">
+                <li><a id="navLinks" class="active" href="index.html">Home</a></li>
+                <li><a id="navLinks" href="monthCourses.html">Month Courses</a></li>
+                <li><a id="navLinks" href="weekCourses.html">Weekl Courses</a></li>
+                <li><a id="navLinks" href="about.html">About</a></li>
+                <li>
+                    <div id="navLinks" class="active" class="iconCart">
+                        <i class="fa-solid fa-bag-shopping fa-bounce fa-2xl"></i>
+                        <div class="totalQuantity">
+                            <p>0</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a id="navLinks" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="toggleMenu" onclick="document.querySelector('.menu').classList.toggle('active')">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <h1>Leaf And Learn</h1>
+        <h2>Aspire Today to Elevate Tomorrow to Empower The Nation.</h2>
+        <div id="leaf">
+            <i class="fa-solid fa-leaf fa-beat"></i>
+        </div>
+    </header>
 
     <div class="container">
         <div class="checkoutLayout">
             <div class="returnCart">
                 <a href="/">keep shopping</a>
-                <h1>List Product in Cart</h1>
+                <h1>Chosen Courses in Cart</h1>
                 <div class="list"></div>
             </div>
 

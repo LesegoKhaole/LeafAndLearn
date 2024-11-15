@@ -4,31 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Month Courses</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this links to your CSS file -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Header -->
     <header>
         <div class="menuTop">
             <div class="logo">
                 <img src="image/Logo.png" alt="">
             </div>
             <ul class="menu">
-                <li><a id="navLinks" href="index.html">Home</a></li>
-                <li><a id="navLinks" class="active" href="monthCourses.html">Month Courses</a></li>
+                <li><a id="navLinks" class="active" href="index.html">Home</a></li>
+                <li><a id="navLinks" href="monthCourses.html">Month Courses</a></li>
                 <li><a id="navLinks" href="weekCourses.html">Weekl Courses</a></li>
                 <li><a id="navLinks" href="about.html">About</a></li>
                 <li>
-                    <div id="navLinks" class="iconCart">
+                    <a id="navLinks" href="cart.html">
                         <i class="fa-solid fa-bag-shopping fa-bounce fa-2xl"></i>
                         <div class="totalQuantity">
                             <p>0</p>
                         </div>
-                    </div>
+                    </a>
                 </li>
                 <li><a id="navLinks" href="contact.html">Contact</a></li>
             </ul>
@@ -44,75 +43,56 @@
         </div>
     </header>
 
-    <!-- Slider -->
-    <div class="slider">
-        <div class="list">
-            <div class="item active">
-                <img src="image/firstAid.jpg" alt="First Aid">
-                <div class="content">
-                    <p>Six-Month Courses</p>
-                    <h2>First Aid</h2>
-                    <p>Learn to save lives—because "I Googled it" won't cut it in an emergency!</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/sewing.jpg" alt="Sewing">
-                <div class="content">
-                    <p>Six-Month Courses</p>
-                    <h2>Sewing</h2>
-                    <p>Sewing: because sometimes you just need to turn "I can't wear this anymore" into "Look what I
-                        made!"</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/landscaping.jpg" alt="Landscaping">
-                <div class="content">
-                    <p>Six-Month Courses</p>
-                    <h2>Landscaping</h2>
-                    <p>Digging in the dirt—it's like therapy, but cheaper and you get a garden!</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/lifeSkills.jpg" alt="Life Skills">
-                <div class="content">
-                    <p>Six-Month Courses</p>
-                    <h2>Life Skills</h2>
-                    <p>Adulting: where the only thing harder than paying bills is pretending you know what you're doing!
-                    </p>
-                </div>
-            </div>
-        </div>
+    <main>
+        <section class="autoShow">
+            <h2>Contact Information</h2>
+            <p>General Inquiries: +27 11 123 4567</p>
+            <p>Contact Us: <a href="mailto:info@leafandlearn.co.za">info@leafandlearn.co.za</a></p>
+        </section>
 
-        <!-- Thumbnail with links to detail page -->
-        <div class="thumbnail">
-            <a href="detail.html?course=firstAid">
-                <div class="item active">
-                    <img src="image/firstAid.jpg" alt="First Aid">
-                    <div class="content">First Aid</div>
-                </div>
-            </a>
-            <a href="detail.html?course=sewing">
-                <div class="item">
-                    <img src="image/sewing.jpg" alt="Sewing">
-                    <div class="content">Sewing</div>
-                </div>
-            </a>
-            <a href="detail.html?course=landscaping">
-                <div class="item">
-                    <img src="image/landscaping.jpg" alt="Landscaping">
-                    <div class="content">Landscaping</div>
-                </div>
-            </a>
-            <a href="detail.html?course=lifeSkills">
-                <div class="item">
-                    <img src="image/lifeSkills.jpg" alt="Life Skills">
-                    <div class="content">Life Skills</div>
-                </div>
-            </a>
-        </div>
-    </div>
+        <section class="grid grid-1">
+            <h2>Physical Addresses of Venues</h2>
 
-    <script src="app.js"></script>
+            <div class="venue autoShow">
+                <h3>Venue 1: Johannesburg Central Library</h3>
+                <p>Address: 1 Rissik St, Johannesburg, 2001</p>
+                <p>Neighbourhood: Johannesburg CBD</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2154.0645558361193!2d-0.18213278826286128!3d51.495485271693035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876055da1785243%3A0x85f0db149daac267!2s16%20Cromwell%20Rd%2C%20South%20Kensington%2C%20London%20SW7%205JP%2C%20UK!5e1!3m2!1sen!2sza!4v1724342003284!5m2!1sen!2sza"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="venue autoShow">
+                <h3>Venue 2: Braamfontein Community Center</h3>
+                <p>Address: 4th Ave, Braamfontein, Johannesburg, 2017</p>
+                <p>Neighbourhood: Braamfontein</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2154.0645558361193!2d-0.18213278826286128!3d51.495485271693035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876055da1785243%3A0x85f0db149daac267!2s16%20Cromwell%20Rd%2C%20South%20Kensington%2C%20London%20SW7%205JP%2C%20UK!5e1!3m2!1sen!2sza!4v1724342003284!5m2!1sen!2sza"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="venue autoShow">
+                <h3>Venue 3: Soweto Theatre</h3>
+                <p>Address: 1404 Dlamini Rd, Soweto, 1868</p>
+                <p>Neighbourhood: Soweto</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2154.0645558361193!2d-0.18213278826286128!3d51.495485271693035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876055da1785243%3A0x85f0db149daac267!2s16%20Cromwell%20Rd%2C%20South%20Kensington%2C%20London%20SW7%205JP%2C%20UK!5e1!3m2!1sen!2sza!4v1724342003284!5m2!1sen!2sza"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="content">
+            <p>&copy; 2024 Leaf and Learn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="autoRotate"></div> <!-- Optional element for autoRotate animation -->
+
 
     <footer>
         <div class="content">
@@ -202,7 +182,6 @@
             .catch(error => console.error('Error loading footer:', error));
     </script>
 
-    <script src="cart.js"></script>
 
 </body>
 

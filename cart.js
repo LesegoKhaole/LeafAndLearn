@@ -42,7 +42,7 @@ function addDataToHTML(){
             newProduct.innerHTML = 
             `<img src="${product.image}" alt="">
             <h2>${product.name}</h2>
-            <div class="price">$${product.price}</div>
+            <div class="price">R${product.price}</div>
             <button onclick="addCart(${product.id})">Add To Cart</button>`;
 
             listProductHTML.appendChild(newProduct);
@@ -99,7 +99,7 @@ function addCartToHTML(){
                     `<img src="${product.image}">
                     <div class="content">
                         <div class="name">${product.name}</div>
-                        <div class="price">$${product.price} / 1 product</div>
+                        <div class="price">R${product.price} / 1 product</div>
                     </div>
                     <div class="quantity">
                         <button onclick="changeQuantity(${product.id}, '-')">-</button>
@@ -112,6 +112,25 @@ function addCartToHTML(){
         })
     }
     totalHTML.innerText = totalQuantity;
+
+      // Calculate discount
+      if (totalQuantity === 0) {
+        discount = 0;        
+    } else if (totalQuantity === 1) {
+        discount = 0;        
+    } else if (totalQuantity === 2) {
+        discount = 5;        
+    } else if (totalQuantity === 3) {
+        discount = 10;
+    } else {
+        discount = 15;
+    }
+    
+    // Display discount message
+    let discountMessage = document.querySelector('.discountMessage');
+    discountMessage.innerText = `Discount: ${discount}%`;
+
+
 }
 function changeQuantity($idProduct, $type){
     switch ($type) {

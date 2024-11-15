@@ -56,7 +56,7 @@ header img {
 }
 .banner .image img {
   position: absolute;
-  height: 130%;
+  height: 100%;
   left: 50%;
   transform: translateX(-50%);
   bottom: 0px;
